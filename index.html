@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Cheze | Homepage</title>
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/169696273?v=4">
+
+    <meta name="description" content="The personal site for all of Cheze's projects.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container navbar-inner">
+
+            <a class="logo" href="#top" aria-label="Return to homepage">
+                <img class="logo-image" src="https://avatars.githubusercontent.com/u/169696273?v=4" alt="Logo">
+
+                <span class="logo-text">Cheze.dev</span>
+            </a>
+
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li>
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link skills-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme"
+                    title="Toggle theme">
+                    <span class="theme-icon" aria-hidden="true">☀</span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="top">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        <span class="status-dot"></span>
+                        Welcome to my website
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="accent">Cheze.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm a developer who's been making many different projects over
+                        the years, and this is the place I've made to show them off!
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">
+                            View my projects
+                            <span aria-hidden="true">↓</span>
+                        </a>
+
+                        <a class="button button-secondary" href="https://github.com/Cheze-Burgur" target="_blank"
+                            rel="noopener noreferrer">
+                            Visit GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="code-window" aria-label="Decorative code">
+                    <div class="window-toolbar">
+                        <span class="window-dot red"></span>
+                        <span class="window-dot yellow"></span>
+                        <span class="window-dot green"></span>
+                        <span class="window-title">dev.js</span>
+                    </div>
+
+                    <div class="code-content" aria-hidden="true">
+                        <span class="code-line"><span class="code-keyword">class</span> <span
+                                class="code-name">Developer</span> {</span>
+                        <span class="code-line">&nbsp;&nbsp;<span class="code-keyword">constructor</span>() {</span>
+                        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span
+                                class="code-property">name</span> = <span class="code-string">"Cheze"</span>;</span>
+                        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span
+                                class="code-property">projects</span> = [</span>
+                        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="code-string">"CPU-Emulator"</span>,</span>
+                        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;];</span>
+                        <span class="code-line">&nbsp;&nbsp;}</span>
+                        <span class="code-line">&nbsp;</span>
+                        <span class="code-line">&nbsp;&nbsp;<span class="code-property">openProject</span>(name){</span>
+                        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span><span
+                                class="code-string">`/projects/${name}`</span>;</span>
+                        <span class="code-line">&nbsp;&nbsp;}</span>
+                        <span class="code-line">}</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+
+                <header class="section-header reveal">
+                    <span class="section-label">About me</span>
+
+                    <h2 class="section-title">
+                        I like to make things
+                    </h2>
+
+                    <p class="section-description">
+                        Most of my projects are just random ideas that I decide to bring to life.
+                    </p>
+                </header>
+
+                <div class="about-grid">
+                    <article class="panel about-card reveal">
+                        <p>
+                            I'm a developer who enjoys building <strong>clean looking, interactive software from
+                                scratch</strong>.
+                        </p>
+
+                        <p>
+                            I am also interested in learning computer architecture and the low-level processes that make
+                            computers possible.
+                        </p>
+
+                        <p>
+                            Many of my projects reflect my interests in these subjects.
+                        </p>
+                    </article>
+
+                    <aside class="panel fact-card reveal">
+                        <div class="fact-list">
+
+                            <div class="fact">
+                                <div class="fact-icon">&lt;/&gt;</div>
+
+                                <div>
+                                    <div class="fact-title">Web Development</div>
+                                    <div class="fact-description">
+                                        I make interactive HTML, CSS, and JavaScript projects
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fact">
+                                <div class="fact-icon">{ }</div>
+
+                                <div>
+                                    <div class="fact-title">Software Development</div>
+                                    <div class="fact-description">
+                                        I know the basics of languages like Python and C, and I'm always looking to
+                                        improve
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fact">
+                                <div class="fact-icon">⚒</div>
+
+                                <div>
+                                    <div class="fact-title">Useful tools</div>
+                                    <div class="fact-description">
+                                        I try to make programs that can help people with their own projects
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+
+                <header class="section-header reveal">
+                    <span class="section-label">Featured work</span>
+
+                    <h2 class="section-title">
+                        Projects I've been building.
+                    </h2>
+
+                    <p class="section-description">
+                        A selection of my favorite tools and projects.
+                    </p>
+                </header>
+
+                <div class="projects-grid" id="projects-grid"></div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="container">
+
+                <header class="section-header reveal">
+                    <span class="section-label">Skills</span>
+
+                    <h2 class="section-title">
+                        Tools I work with.
+                    </h2>
+
+                    <p class="section-description">
+                        Technologies I've used while building personal projects.
+                    </p>
+                </header>
+
+                <div class="skills-layout">
+
+                    <article class="panel skill-group reveal">
+                        <h3 class="skill-group-title">Languages I use</h3>
+
+                        <ul class="skills-list">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">JavaScript</li>
+                            <li class="skill">C</li>
+                            <li class="skill">C++</li>
+                            <li class="skill">Python</li>
+                        </ul>
+                    </article>
+
+                    <article class="panel skill-group reveal">
+                        <h3 class="skill-group-title">Tools I use</h3>
+
+                        <ul class="skills-list">
+                            <li class="skill">Git</li>
+                            <li class="skill">GitHub</li>
+                            <li class="skill">VS Code</li>
+                            <li class="skill">Hackatime</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+
+                <div class="panel contact-card reveal">
+                    <div class="contact-content">
+                        <span class="section-label">Contact</span>
+
+                        <h2 class="contact-title">
+                            Want to talk to me?
+                        </h2>
+
+                        <p class="contact-description">
+                            You can find more of my work on GitHub or contact me
+                            through the links below.
+                        </p>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a class="button button-primary" href="https://github.com/Cheze-Burgur" target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a class="button button-secondary" href="mailto:chezeburgur@gmail.com">
+                            Email me
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>
+                © <span id="current-year"></span> Cheze.
+            </p>
+
+            <a class="footer-link" href="#top">
+                Back to top ↑
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
