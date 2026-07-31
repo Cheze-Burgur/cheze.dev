@@ -96,35 +96,35 @@ class Portfolio {
 
     renderProjects() {
 
-        this.projectGrid.innerHTML = projects
-            .map(project => {
+                this.projectGrid.innerHTML = projects
+                    .map(project => {
 
-                const tags = project.tags
-                    .map(tag => `
+                        const tags = project.tags
+                            .map(tag => `
                         <li class="tag">
                             ${tag}
                         </li>
                     `)
-                    .join("");
+                            .join("");
 
-                const version = project.version
-                    ? `
+                        const version = project.version
+                            ? `
                         <span class="version">
                             v${project.version}
                         </span>
                     `
-                    : "";
+                            : "";
 
-                const status = project.status
-                    ? `
+                        const status = project.status
+                            ? `
                         <span class="featured-badge">
                             ${project.status}
                         </span>
                     `
-                    : "";
+                            : "";
 
-                const preview = project.image
-                    ? `
+                        const preview = project.image
+                            ? `
                         <img
                             class="project-image"
                             src="${project.image}"
@@ -132,14 +132,14 @@ class Portfolio {
                             loading="lazy"
                         >
                     `
-                    : `
+                            : `
                         <span class="project-symbol">
                             ${project.symbol}
                         </span>
                     `;
 
-                const githubLink = project.github
-                    ? `
+                        const githubLink = project.github
+                            ? `
                         <a
                             class="project-link"
                             href="${project.github}"
@@ -149,10 +149,10 @@ class Portfolio {
                             GitHub Repo ↗
                         </a>
                     `
-                    : "";
+                            : "";
 
-                const demoLink = project.demo
-                    ? `
+                        const demoLink = project.demo
+                            ? `
                         <a
                             class="project-link"
                             href="${project.demo}"
@@ -162,9 +162,9 @@ class Portfolio {
                             Live Demo ↗
                         </a>
                     `
-                    : "";
+                            : "";
 
-                return `
+                        return `
                     <article class="panel project-card reveal">
 
                         <div class="project-preview">
@@ -205,9 +205,46 @@ class Portfolio {
 
                     </article>
                 `;
-            })
-            .join("");
-    }
+                    })
+                    .join("") + `
+                    <article class="panel project-card reveal">
+
+                        <div class="project-preview">
+                            <span class="project-symbol">
+                                📑
+                            </span>
+                        </div>
+
+                        <div class="project-body">
+
+                            <div class="project-top">
+
+                                <h3 class="project-title">
+                                    Other Projects
+                                </h3>
+
+                            </div>
+
+                            <p class="project-description">
+                                View my other project repositories.
+                            </p>
+
+                            <div class="project-links">
+                                <a
+                                    class="project-link"
+                                    href="https://github.com/Cheze-Burgur?tab=repositories"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Go to my repositories ↗
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+                `;
+            }
 
 }
 
