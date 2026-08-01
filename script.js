@@ -272,6 +272,27 @@ const projects = [
         featured: true,
         status: "Featured"
     },
+
+    {
+        title: "Chess",
+        description: "A custom online chess board.",
+
+        symbol: "♟️",
+
+        tags: [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+
+        github:
+            "https://github.com/Cheze-Burgur/Chess",
+
+        demo: "https://cheze-burgur.github.io/Chess/",
+
+        featured: false,
+        status: "WIP"
+    }
 ];
 
 new Portfolio();
