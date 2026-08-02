@@ -292,6 +292,18 @@ const projects = [
 
         featured: false,
         status: "WIP"
+    },
+
+    {
+        title: "Collab",
+        description: "GD collab I'm hosting. Currently in the building phase. ID: Unreleased.",
+
+        symbol: "ΔΔΔ",
+
+        github: "https://github.com/Cheze-Burgur/collab",
+
+        featured: false,
+        status: "WIP"
     }
 ];
 
