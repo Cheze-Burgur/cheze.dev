@@ -300,6 +300,10 @@ const projects = [
 
         symbol: "ΔΔΔ",
 
+        tags: [
+            "gmd"
+        ],
+
         github: "https://github.com/Cheze-Burgur/collab",
 
         featured: false,
