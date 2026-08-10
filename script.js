@@ -251,7 +251,7 @@ class Portfolio {
 const projects = [
     {
         title: "BatPU Emulator",
-        version: "1.5",
+        version: "1.6",
         description: "A browser-based CPU emulator with an assembler, register and memory displays, I/O devices, and debugging controls.",
 
         image: "https://github.com/Cheze-Burgur/BatPU-Emulator---Web-Port/raw/main/images/readme/readme-main.png",
